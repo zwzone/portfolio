@@ -1,0 +1,17 @@
+* {
+  border-box: box-sizing;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkest-blue: #251D3A;
+  --dark-blue: #2A2550;
+  --dark-orange: #E04D01;
+  --orange: #FF7700;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--darkest-blue)
+}
