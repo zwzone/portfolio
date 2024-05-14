@@ -1,0 +1,35 @@
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+#projects .title {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: .5rem;
+}
+
+#projects .title::before {
+  content: "02.";
+  font-family: 'Roboto Mono', monospace;
+  color: var(--primary);
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#projects .title::after {
+  content: "";
+  display: block;
+  background-color: whitesmoke;
+  opacity: 0.2;
+  height: 1px;
+  width: 100%;
+}

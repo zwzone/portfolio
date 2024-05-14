@@ -1,17 +1,24 @@
+/* CSS Files */
+@import "./typography.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./humberger.css";
+@import "./home.css";
+@import "./about.css";
+@import "./projects.css";
+
 * {
-  border-box: box-sizing;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --darkest-blue: #251D3A;
-  --dark-blue: #2A2550;
-  --dark-orange: #E04D01;
-  --orange: #FF7700;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--darkest-blue)
+  background-color: var(--secondary-1);
+}
+
+main {
+  padding-inline: 1.25rem;
+  transition: filter .4s;
 }

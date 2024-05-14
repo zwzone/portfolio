@@ -1,0 +1,54 @@
+:root {
+  --color-darkest-blue: #251D3A;
+  --color-dark-blue: #2A2550;
+  --color-dark-orange: #E04D01;
+  --color-orange: #FF7700;
+  --color-dark-grey: #35374B;
+  --color-black: #191A19;
+  --color-dark-green: #1E5128;
+  --color-green: #4E9F3D;
+  --color-light-green: #D8E9A8;
+
+  --secondary-1: var(--color-black);
+  --secondary-2: var(--color-dark-grey);
+  --secondary-3: var(--color-dark-green);
+  --primary: var(--color-light-green);
+
+  scroll-behavior: smooth;
+}
+
+.color-white {
+  color: whitesmoke;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secondary-1 {
+  color: var(--secondary-1);
+}
+
+.color-secondary-2 {
+  color: var(--secondary-2);
+}
+
+.color-secondary-3 {
+  color: var(--secondary-3);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary-1 {
+  background-color: var(--secondary-1);
+}
+
+.bg-secondary-2 {
+  background-color: var(--secondary-2);
+}
+
+.bg-secondary-3 {
+  background-color: var(--secondary-3);
+}

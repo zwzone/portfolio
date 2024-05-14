@@ -5,13 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script defer src="./script.js"></script>
   <title>Zakaria Wina</title>
 </head>
 
 <body>
   <header>
-    Zakaria
+    <a href="#home" class="logo">
+      <img src="assets/z-letter.svg" alt="logo">
+    </a>
+    <div class="humberger" onclick="show()">
+      <div class="humberger-line"></div>
+    </div>
+    <nav>
+      <ul class="bg-secondary-2">
+        <li class="color-primary" onclick="show()">01. <a class="color-white" href="#about">About</a></li>
+        <li class="color-primary" onclick="show()">02. <a class="color-white" href="#projects">Projects</a></li>
+      </ul>
+    </nav>
   </header>
+  <main>
+    <section id="home">
+      <img class="my-avatar" src="assets/avatar.jpeg" alt="avatar">
+      <p class="my-intro color-primary font-roboto-mono font-light">Hello, my name is</p>
+      <h1 class="my-name color-white font-inter">Zakaria Wina.</h1>
+      <h1 class="my-role color-white font-inter">Software Engineer</h1>
+      <p class="my-desc color-white font-inter">As a software engineer, I create efficient web apps for exceptional user
+        experiences.</p>
+    </section>
+    <section id="about">
+        <h1 class="title color-white">About Me</h1>
+    </section>
+    <section id="projects">
+        <h1 class="title color-white">Projects</h1>
+    </section>
+  </main>
 </body>
 
 </html>

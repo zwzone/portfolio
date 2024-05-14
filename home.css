@@ -1,0 +1,38 @@
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.my-avatar {
+  width: 128px;
+  height: 128px;
+  align-self: center;
+  filter: grayscale(100%);
+  transition: filter .4s;
+}
+
+.my-avatar:hover {
+  filter: grayscale(0%);
+}
+
+.my-intro {
+  font-size: 1rem;
+}
+
+.my-name {
+  font-size: 2.5em;
+}
+
+.my-role {
+  font-size: 2.5em;
+  opacity: 0.7;
+}
+
+.my-desc {
+  font-size: 1rem;
+  opacity: 0.6;
+}
