@@ -1,5 +1,5 @@
 #projects {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,7 @@
   align-items: center;
   white-space: nowrap;
   gap: .5rem;
+  font-size: 1.25rem;
 }
 
 #projects .title::before {
@@ -21,7 +22,7 @@
   font-family: 'Roboto Mono', monospace;
   color: var(--primary);
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -32,4 +33,55 @@
   opacity: 0.2;
   height: 1px;
   width: 100%;
+}
+
+#projects>div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-3);
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+}
+
+.project>.icons {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.project>.icons>img[alt="icon"] {
+  width: 50px;
+}
+
+.project>.icons>img[alt="link"] {
+  width: 25px;
+  opacity: 0.9;
+}
+
+.project>.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project>.description>h2 {
+  font-size: 1.25rem;
+}
+
+.project>.description>p {
+  font-size: .9rem;
+}
+
+.project>ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: .25rem;
+  font-size: .75rem;
 }

@@ -22,3 +22,7 @@ main {
   padding-inline: 1.25rem;
   transition: filter .4s;
 }
+
+section {
+  padding-block: 3rem;
+}

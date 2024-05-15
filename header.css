@@ -5,7 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 75px;
   width: 100%;
   padding: 0 1.5rem;
   z-index: 20;
@@ -44,7 +44,7 @@ nav {
   width: 100%;
 }
 
-nav ul {
+nav>ul {
   height: 100%;
   width: 75%;
   display: flex;
