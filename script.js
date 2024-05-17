@@ -34,3 +34,15 @@ function skillToggler(e) {
     }
   }
 }
+
+// Hide Header on scroll down
+let prevScrollpos = window.scrollY;
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("header").style.top = "0";
+  } else {
+    document.querySelector("header").style.top = "-75px";
+  }
+  prevScrollpos = currentScrollPos;
+};

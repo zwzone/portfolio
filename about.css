@@ -7,7 +7,8 @@
   gap: 1rem;
 }
 
-#about .title {
+#about>.title {
+  color: var(--color-secondary-23);
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -17,23 +18,28 @@
   font-size: 1.25rem;
 }
 
-#about .title::before {
+#about>.title::before {
   content: "01.";
   /* Roboto */
   font-family: 'Roboto Mono', monospace;
-  color: var(--primary);
+  color: var(--color-primary-4);
   font-style: normal;
   font-size: 1rem;
   font-weight: 400;
 }
 
-#about .title::after {
+#about>.title::after {
   content: "";
   display: block;
-  background-color: whitesmoke;
+  background-color: var(--color-secondary-23);
   opacity: 0.2;
   height: 1px;
   width: 100%;
+}
+
+#about>p {
+  color: var(--color-secondary-23);
+  opacity: 0.5;
 }
 
 .skills {
@@ -52,12 +58,12 @@
 .skills-types>button {
   font-family: 'Roboto Mono', monospace;
   padding: .5rem 1rem;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid var(--color-secondary-23);
   border-top: none;
   border-left: none;
   border-right: none;
   background-color: transparent;
-  color: whitesmoke;
+  color: var(--color-secondary-23);
   opacity: .6;
   font-size: .75rem;
   cursor: pointer;
@@ -65,8 +71,8 @@
 }
 
 .skills-types>button.active {
-  color: var(--primary);
-  border-bottom: 1px solid var(--primary);
+  color: var(--color-primary-4);
+  border-bottom: 1px solid var(--color-primary-4);
   opacity: 1;
 }
 
@@ -86,13 +92,15 @@
 
 .skills-list>ul>li {
   display: flex;
+  color: var(--color-secondary-23);
+  opacity: 0.7;
   align-items: center;
-  font-size: .75rem;
+  font-size: 1rem;
   gap: 1rem;
 }
 
 .skills-list>ul>li::before {
   content: "▷";
-  color: var(--primary);
+  color: var(--color-primary-4);
   font-size: .7rem;
 }

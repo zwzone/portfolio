@@ -6,6 +6,7 @@
 @import "./home.css";
 @import "./about.css";
 @import "./projects.css";
+@import "./contact.css";
 
 * {
   box-sizing: border-box;
@@ -15,7 +16,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--secondary-1);
+  background-color: var(--color-secondary-11);
 }
 
 main {

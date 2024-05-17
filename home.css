@@ -20,17 +20,23 @@
 }
 
 .my-intro {
+  color: var(--color-primary-4);
   font-size: 1rem;
 }
 
 .my-name {
+  color: var(--color-secondary-23);
   font-size: 2.5em;
 }
 
 .my-role {
+  color: var(--color-secondary-23);
+  opacity: 0.7;
   font-size: 2.5em;
 }
 
 .my-desc {
+  color: var(--color-secondary-23);
+  opacity: 0.5;
   font-size: 1rem;
 }

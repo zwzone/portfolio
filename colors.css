@@ -1,24 +1,33 @@
 :root {
-  --color-darkest-blue: #251D3A;
-  --color-dark-blue: #2A2550;
-  --color-dark-orange: #E04D01;
-  --color-orange: #FF7700;
-  --color-dark-grey: #35374B;
-  --color-black: #191A19;
-  --color-dark-green: #1E5128;
-  --color-green: #4E9F3D;
-  --color-light-green: #D8E9A8;
+  --color-black-1: #171717;
+  --color-black-2: #20262E;
+  --color-black-3: #393E46;
 
-  --secondary-1: var(--color-black);
-  --secondary-2: var(--color-dark-grey);
-  --secondary-3: var(--color-dark-green);
-  --primary: var(--color-light-green);
+  --color-white-1: #DDDDDD;
+  --color-white-2: #EEEEEE;
+  --color-white-3: #F3F8FF;
+
+  --color-green-1: #1A4D2E;
+  --color-green-2: #4E9F3D;
+  --color-green-3: #9DDE8B;
+  --color-green-4: #E6FF94;
+
+  --color-secondary-11: var(--color-black-1);
+  --color-secondary-12: var(--color-black-2);
+  --color-secondary-13: var(--color-black-3);
+  --color-secondary-21: var(--color-white-1);
+  --color-secondary-22: var(--color-white-2);
+  --color-secondary-23: var(--color-white-3);
+  --color-primary-1: var(--color-green-1);
+  --color-primary-2: var(--color-green-2);
+  --color-primary-3: var(--color-green-3);
+  --color-primary-4: var(--color-green-4);
 
   scroll-behavior: smooth;
 }
 
-.color-white {
-  color: whitesmoke;
+/* .color-white {
+  color: var(--color-white-3);
 }
 
 .color-primary {
@@ -52,3 +61,4 @@
 .bg-secondary-3 {
   background-color: var(--secondary-3);
 }
+ */

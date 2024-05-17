@@ -15,12 +15,13 @@
   white-space: nowrap;
   gap: .5rem;
   font-size: 1.25rem;
+  color: var(--color-secondary-23);
 }
 
 #projects .title::before {
   content: "02.";
   font-family: 'Roboto Mono', monospace;
-  color: var(--primary);
+  color: var(--color-primary-4);
   font-style: normal;
   font-size: 1rem;
   font-weight: 400;
@@ -29,7 +30,7 @@
 #projects .title::after {
   content: "";
   display: block;
-  background-color: whitesmoke;
+  background-color: var(--color-secondary-23);
   opacity: 0.2;
   height: 1px;
   width: 100%;
@@ -44,7 +45,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary-3);
+  background-color: var(--color-secondary-12);
   padding: 3rem 1.5rem;
   gap: 2rem;
 }
@@ -61,7 +62,7 @@
 
 .project>.icons>img[alt="link"] {
   width: 25px;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .project>.description {
@@ -71,10 +72,13 @@
 }
 
 .project>.description>h2 {
+  color: var(--color-secondary-23);
   font-size: 1.25rem;
 }
 
 .project>.description>p {
+  color: var(--color-secondary-23);
+  opacity: 0.7;
   font-size: .9rem;
 }
 
@@ -84,4 +88,6 @@
   column-gap: 1rem;
   row-gap: .25rem;
   font-size: .75rem;
+  color: var(--color-secondary-23);
+  opacity: 0.5;
 }
