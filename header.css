@@ -28,9 +28,10 @@ header>.logo {
   height: 3rem;
 }
 
-.logo>img {
+.logo>.z-letter-svg {
   height: 100%;
   filter: drop-shadow(0px 0px 5px var(--color-primary-4));
+  stroke: var(--color-primary-4);
 }
 
 nav {

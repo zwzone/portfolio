@@ -8,7 +8,6 @@
 }
 
 #about>.title {
-  color: var(--color-secondary-23);
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -16,6 +15,7 @@
   white-space: nowrap;
   gap: .5rem;
   font-size: 1.25rem;
+  color: var(--color-secondary-23);
 }
 
 #about>.title::before {

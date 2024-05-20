@@ -56,13 +56,26 @@
   justify-content: space-between;
 }
 
-.project>.icons>img[alt="icon"] {
-  width: 50px;
+.project>.icons>svg {
+  width: 64px;
 }
 
-.project>.icons>img[alt="link"] {
-  width: 25px;
+.project>.icons>.link-svg {
+  width: 24px;
+  stroke: var(--color-secondary-23);
   opacity: 0.7;
+}
+
+.project>.icons>.pong-svg {
+  fill: var(--color-primary-4);
+}
+
+.project>.icons>.server-svg {
+  stroke: var(--color-primary-4);
+}
+
+.project>.icons>.docker-svg {
+  fill: var(--color-primary-4);
 }
 
 .project>.description {
