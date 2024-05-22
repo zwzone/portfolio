@@ -3,6 +3,7 @@ const skillsTypesElem = document.querySelector(".skills-types");
 const skillsTypesChildElems = skillsTypesElem.children;
 const skillsListElem = document.querySelector(".skills-list");
 const skillsListChildElems = skillsListElem.children;
+const projectElems = document.querySelectorAll(".project");
 
 skillsTypesElem.addEventListener("click", skillToggler);
 
@@ -46,3 +47,10 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+// Open project in new tab
+projectElems.forEach((projectElem) => {
+  projectElem.addEventListener("click", (event) => {
+    window.open(event.currentTarget.dataset.projectUrl, "_blank");
+  });
+});

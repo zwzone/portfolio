@@ -38,9 +38,8 @@
 }
 
 #contact>div>p {
-  color: var(--color-secondary-23);
+  color: var(--color-secondary-23-tr2);
   text-align: center;
-  opacity: 0.5;
 }
 
 #contact>a {

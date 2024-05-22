@@ -30,9 +30,8 @@
 #projects .title::after {
   content: "";
   display: block;
-  background-color: var(--color-secondary-23);
-  opacity: 0.2;
-  height: 1px;
+  background-color: var(--color-secondary-13);
+  height: 2px;
   width: 100%;
 }
 
@@ -48,6 +47,7 @@
   background-color: var(--color-secondary-12);
   padding: 3rem 1.5rem;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .project>.icons {
@@ -62,20 +62,17 @@
 
 .project>.icons>.link-svg {
   width: 24px;
-  stroke: var(--color-secondary-23);
-  opacity: 0.7;
+  stroke: var(--color-secondary-23-tr1);
 }
 
-.project>.icons>.pong-svg {
+.project>.icons>.pong-svg,
+.project>.icons>.react-svg,
+.project>.icons>.docker-svg {
   fill: var(--color-primary-4);
 }
 
 .project>.icons>.server-svg {
   stroke: var(--color-primary-4);
-}
-
-.project>.icons>.docker-svg {
-  fill: var(--color-primary-4);
 }
 
 .project>.description {
@@ -90,8 +87,7 @@
 }
 
 .project>.description>p {
-  color: var(--color-secondary-23);
-  opacity: 0.7;
+  color: var(--color-secondary-23-tr1);
   font-size: .9rem;
 }
 
@@ -101,6 +97,5 @@
   column-gap: 1rem;
   row-gap: .25rem;
   font-size: .75rem;
-  color: var(--color-secondary-23);
-  opacity: 0.5;
+  color: var(--color-secondary-23-tr2);
 }

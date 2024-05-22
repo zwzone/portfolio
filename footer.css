@@ -18,22 +18,20 @@ footer>.socials>a {
 
 footer>.socials>a>svg {
   width: 32px;
-  opacity: 0.5;
 }
 
 footer>.socials>a>svg.github-svg,
 footer>.socials>a>svg.linkedin-svg {
-  stroke: var(--color-secondary-23);
+  stroke: var(--color-secondary-23-tr2);
 }
 
 footer>.socials>a>svg.leetcode-svg {
-  fill: var(--color-secondary-23);
+  fill: var(--color-secondary-23-tr2);
 }
 
 footer>p {
   text-align: center;
-  color: var(--color-secondary-23);
-  opacity: 0.5;
+  color: var(--color-secondary-23-tr2);
   font-size: .85rem;
   font-weight: bold;
 }

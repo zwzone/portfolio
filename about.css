@@ -31,15 +31,17 @@
 #about>.title::after {
   content: "";
   display: block;
-  background-color: var(--color-secondary-23);
-  opacity: 0.2;
-  height: 1px;
+  background-color: var(--color-secondary-13);
+  height: 2px;
   width: 100%;
 }
 
 #about>p {
-  color: var(--color-secondary-23);
-  opacity: 0.5;
+  color: var(--color-secondary-23-tr2);
+}
+
+#about>p>a {
+  color: var(--color-primary-4);
 }
 
 .skills {
@@ -63,8 +65,7 @@
   border-left: none;
   border-right: none;
   background-color: transparent;
-  color: var(--color-secondary-23);
-  opacity: .6;
+  color: var(--color-secondary-23-tr2);
   font-size: .75rem;
   cursor: pointer;
   transition: all .4s;
@@ -73,7 +74,6 @@
 .skills-types>button.active {
   color: var(--color-primary-4);
   border-bottom: 1px solid var(--color-primary-4);
-  opacity: 1;
 }
 
 .skills-list {
@@ -92,8 +92,7 @@
 
 .skills-list>ul>li {
   display: flex;
-  color: var(--color-secondary-23);
-  opacity: 0.7;
+  color: var(--color-secondary-23-tr1);
   align-items: center;
   font-size: 1rem;
   gap: 1rem;
