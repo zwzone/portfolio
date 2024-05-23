@@ -48,6 +48,12 @@
   padding: 3rem 1.5rem;
   gap: 2rem;
   cursor: pointer;
+  border: 1px solid var(--color-secondary-13);
+  transition: transform .2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
 }
 
 .project>.icons {
@@ -84,6 +90,11 @@
 .project>.description>h2 {
   color: var(--color-secondary-23);
   font-size: 1.25rem;
+  transition: color .2s;
+}
+
+.project:hover>.description>h2 {
+  color: var(--color-primary-4);
 }
 
 .project>.description>p {
