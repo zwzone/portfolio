@@ -28,7 +28,7 @@ header>.logo {
   height: 3rem;
 }
 
-.logo>.z-letter-svg {
+.logo>img {
   height: 100%;
   filter: drop-shadow(0px 0px 5px var(--color-primary-4));
   stroke: var(--color-primary-4);

@@ -16,30 +16,13 @@ footer>.socials>a {
   padding: .5rem;
 }
 
-footer>.socials>a>svg {
+footer>.socials>a>img {
   width: 32px;
+  transition: filter .4s;
 }
 
-footer>.socials>a>svg.github-svg,
-footer>.socials>a>svg.linkedin-svg {
-  stroke: var(--color-secondary-23-tr2);
-  transition: stroke .4s, filter .4s;
-}
-
-footer>.socials>a:hover>svg.github-svg,
-footer>.socials>a:hover>svg.linkedin-svg {
-  stroke: var(--color-primary-4);
-  filter: drop-shadow(0 0 20px var(--color-primary-4));
-}
-
-footer>.socials>a>svg.leetcode-svg {
-  fill: var(--color-secondary-23-tr2);
-  transition: fill .4s, filter .4s;
-}
-
-footer>.socials>a:hover>svg.leetcode-svg {
-  fill: var(--color-primary-4);
-  filter: drop-shadow(0 0 20px var(--color-primary-4));
+footer>.socials>a:hover>img {
+  filter: drop-shadow(0 0 10px var(--color-primary-4));
 }
 
 footer>a {

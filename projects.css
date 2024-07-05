@@ -62,23 +62,12 @@
   justify-content: space-between;
 }
 
-.project>.icons>svg {
+.project>.icons>img {
   width: 64px;
 }
 
-.project>.icons>.link-svg {
+.project>.icons>img.link-external {
   width: 24px;
-  stroke: var(--color-secondary-23-tr1);
-}
-
-.project>.icons>.pong-svg,
-.project>.icons>.react-svg,
-.project>.icons>.docker-svg {
-  fill: var(--color-primary-4);
-}
-
-.project>.icons>.server-svg {
-  stroke: var(--color-primary-4);
 }
 
 .project>.description {
