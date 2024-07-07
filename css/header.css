@@ -15,7 +15,7 @@ header {
 }
 
 header>.logo,
-header>.humberger {
+header>.humburger {
   z-index: inherit;
 }
 
@@ -30,8 +30,7 @@ header>.logo {
 
 .logo>img {
   height: 100%;
-  filter: drop-shadow(0px 0px 5px var(--color-primary-4));
-  stroke: var(--color-primary-4);
+  filter: drop-shadow(0px 0px 20px var(--color-primary-4));
 }
 
 nav {

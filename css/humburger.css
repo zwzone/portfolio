@@ -1,4 +1,4 @@
-.humberger {
+.humburger {
   position: relative;
   height: 30px;
   width: 30px;
@@ -6,7 +6,7 @@
   z-index: inherit;
 }
 
-.humberger-line {
+.humburger-line {
   position: absolute;
   top: 50%;
   right: 0;
@@ -16,7 +16,7 @@
   transition: .2s background-color;
 }
 
-.humberger-line::before {
+.humburger-line::before {
   content: '';
   position: absolute;
   top: -8px;
@@ -28,7 +28,7 @@
   transition: transform .1s .1s, top .1s;
 }
 
-.humberger-line::after {
+.humburger-line::after {
   content: '';
   position: absolute;
   top: 8px;
@@ -40,16 +40,16 @@
   transition: transform .1s .1s, top .1s;
 }
 
-.humberger.active .humberger-line {
+.humburger.active .humburger-line {
   background-color: transparent;
 }
 
-.humberger.active .humberger-line::before {
+.humburger.active .humburger-line::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.humberger.active .humberger-line::after {
+.humburger.active .humburger-line::after {
   top: 0;
   transform: rotate(-45deg);
 }

@@ -5,30 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="./js/script.js"></script>
   <title>Zakaria Wina</title>
 </head>
 
 <body>
   <header>
-    <a href="#home" class="logo">
+    <a onclick="sideBarRemove()" href="#home" class="logo">
       <img src="assets/z-letter.svg" alt="logo">
     </a>
-    <div class="humberger" onclick="show()">
-      <div class="humberger-line"></div>
+    <div class="humburger" onclick="sideBarToggler()">
+      <div class="humburger-line"></div>
     </div>
     <nav>
       <ul>
-        <li onclick="show()">01. <a href="#about">About</a></li>
-        <li onclick="show()">02. <a href="#projects">Projects</a></li>
-        <li onclick="show()">03. <a href="#contact">Contact</a></li>
+        <li onclick="sideBarToggler()">01. <a href="#about">About</a></li>
+        <li onclick="sideBarToggler()">02. <a href="#projects">Projects</a></li>
+        <li onclick="sideBarToggler()">03. <a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="home">
-      <img class="my-avatar" src="assets/avatar.jpeg" alt="avatar">
+      <div class="avatar">
+        <img class="photo" src="assets/avatar.jpeg" alt="avatar">
+        <div class="rectangle"></div>
+        <img class="arrow-down" src="assets/arrow-down.svg" alt="arrow">
+        <img class="arrow-left" src="assets/arrow-left.svg" alt="arrow">
+      </div>
       <p class="my-intro font-roboto-mono font-light">Hello, my name is</p>
       <h1 class="my-name font-inter">Zakaria Wina.</h1>
       <h1 class="my-role font-inter">Software Engineer</h1>

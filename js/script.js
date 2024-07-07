@@ -5,17 +5,27 @@ const skillsListElem = document.querySelector(".skills-list");
 const skillsListChildElems = skillsListElem.children;
 const projectElems = document.querySelectorAll(".project");
 
+const bodyElem = document.querySelector('body');
+const mainElem = document.querySelector('main');
+const humburgerElem = document.querySelector('.humburger');
+const navElem = document.querySelector('nav');
+
 skillsTypesElem.addEventListener("click", skillToggler);
 
-function show() {
-  const main = document.querySelector('main');
-  if (main.style.filter) {
-    main.style.filter = '';
+function sideBarToggler() {
+  if (mainElem.style.filter) {
+    mainElem.style.filter = '';
   } else {
-    main.style.filter = 'blur(5px)';
+    mainElem.style.filter = 'blur(5px)';
   }
-  document.querySelector('.humberger').classList.toggle('active');
-  document.querySelector('nav').classList.toggle('active');
+  humburgerElem.classList.toggle('active');
+  navElem.classList.toggle('active');
+}
+
+function sideBarRemove() {
+  mainElem.style.filter = '';
+  humburgerElem.classList.remove('active');
+  navElem.classList.remove('active');
 }
 
 function skillToggler(e) {
@@ -39,6 +49,8 @@ function skillToggler(e) {
 // Hide Header on scroll down
 let prevScrollpos = window.scrollY;
 window.onscroll = function () {
+  if (humburgerElem.classList.contains('active'))
+    return;
   let currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("header").style.top = "0";
