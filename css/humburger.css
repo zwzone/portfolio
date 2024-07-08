@@ -53,3 +53,9 @@
   top: 0;
   transform: rotate(-45deg);
 }
+
+@media (min-width: 768px) {
+  .humburger {
+    display: none;
+  }
+}

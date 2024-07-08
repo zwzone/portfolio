@@ -55,7 +55,7 @@
 
 #contact>a:hover {
   outline: none;
-  box-shadow: 6px 6px 0 0 var(--color-primary-4);
+  box-shadow: 7px 7px 0 0 var(--color-primary-4);
   transform: translate(-7px, -7px);
 }
 
