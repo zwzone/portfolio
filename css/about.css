@@ -1,9 +1,8 @@
 #about {
-  min-height: 100vh;
+  padding-block: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   gap: 1rem;
 }
 
@@ -48,6 +47,7 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  align-self: center;
   gap: 1rem;
 }
 
@@ -79,6 +79,7 @@
 .skills-list {
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 .skills-list>ul {

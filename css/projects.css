@@ -1,14 +1,13 @@
 #projects {
-  min-height: 100vh;
+  padding-block: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: stretch;
   gap: 1rem;
 }
 
 #projects .title {
-  align-self: stretch;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,10 +35,9 @@
 }
 
 #projects>div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
-  padding-inline: 2rem;
 }
 
 .project {
@@ -99,16 +97,4 @@
   row-gap: .25rem;
   font-size: .75rem;
   color: var(--color-secondary-23-tr2);
-}
-
-@media (min-width: 768px) {
-  #projects>div {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .project {
-    max-width: 384px;
-  }
 }

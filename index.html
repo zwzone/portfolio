@@ -1,208 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Zakaria Wina</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="./js/script.js"></script>
-  <title>Zakaria Wina</title>
-</head>
-
-<body>
-  <header>
-    <a onclick="sideBarRemove()" href="#home" class="logo">
-      <img src="assets/z-letter.svg" alt="logo">
-    </a>
-    <div class="humburger" onclick="sideBarToggler()">
-      <div class="humburger-line"></div>
-    </div>
-    <nav>
-      <ul>
-        <li onclick="sideBarToggler()">01. <a href="#about">About</a></li>
-        <li onclick="sideBarToggler()">02. <a href="#projects">Projects</a></li>
-        <li onclick="sideBarToggler()">03. <a href="#contact">Contact</a></li>
-        <li><a href="./pdf/Zakaria-Wina-Resume.pdf" download>Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <div class="avatar">
-        <img class="photo" src="assets/avatar.jpeg" alt="avatar">
-        <div class="glass"></div>
-        <div class="rectangle"></div>
-        <img class="arrow-down" src="assets/arrow-down.svg" alt="arrow">
-        <img class="arrow-left" src="assets/arrow-left.svg" alt="arrow">
+  <body>
+    <header>
+      <a onclick="sideBarRemove()" href="#home" class="logo">
+        <img src="assets/z-letter.svg" alt="logo" />
+      </a>
+      <div class="humburger" onclick="sideBarToggler()">
+        <div class="humburger-line"></div>
       </div>
-      <div class="infos">
-      <p class="my-intro font-fira-mono font-light">Hello, my name is</p>
-      <h1 class="my-name font-inter">Zakaria Wina.</h1>
-      <h1 class="my-role font-inter">Software Engineer</h1>
-      <p class="my-desc font-inter">As a software engineer, I create efficient web apps for
-        exceptional user
-        experiences.</p>
-      </div>
-    </section>
-    <section id="about">
-      <h1 class="title font-inter">About Me</h1>
-      <p class="font-inter">Hello everyone. I'm Zakaria, deeply fascinated by everything related
-        to science and logic, such as mathematics and
-        physics. When I first delved into the world of computers and programming, I realized that this is the path I
-        must
-        forge for my career.</p>
-      <p class="font-inter">So, my first step was to learn the basics of programming, and I
-        started with Compatitive Programming. I learned
-        algorithms and data structures, and I practiced a lot on platforms like <a
-          href="https://leetcode.com/u/zwzone/">LeetCode</a>. I also learned
-        about web development, and I started with HTML, CSS, and JavaScript. then I learned about React</p>
-      <p class="font-inter">One of my goals is to become a full-stack developer, and I'm working
-        hard to achieve that goal. I'm currently
-        learning Java and Spring Boot to become a back-end developer. I'm also learning about databases and SQL.</p>
-      <p class="font-inter">I'm always looking for opportunities to work on projects that are
-        challenging and require me to learn new things.
-        I'm also looking for opportunities to work with people who are passionate about what they do.</p>
-      <p class="font-inter">Here are a few technologies I've been working with recently:</p>
-      <div class="skills">
-        <div class="skills-types">
-          <button data-skill-type="languages" class="active">Languages</button>
-          <button data-skill-type="frontend">Frontend</button>
-          <button data-skill-type="backend">Backend</button>
-          <button data-skill-type="systems">Systems</button>
-          <button data-skill-type="tools">Tools</button>
+      <nav>
+        <ul>
+          <li onclick="sideBarToggler()">01. <a href="#about">About</a></li>
+          <li onclick="sideBarToggler()">02. <a href="#projects">Projects</a></li>
+          <li onclick="sideBarToggler()">03. <a href="#contact">Contact</a></li>
+          <li><a href="./pdf/Zakaria-Wina-Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="avatar">
+          <img class="photo" src="assets/avatar.jpeg" alt="avatar" />
+          <div class="glass"></div>
+          <div class="rectangle"></div>
+          <img class="arrow-down" src="assets/arrow-down.svg" alt="arrow" />
+          <img class="arrow-left" src="assets/arrow-left.svg" alt="arrow" />
         </div>
-        <div class="skills-list">
-          <ul class="active" data-skill-type="languages">
-            <li>C / C++</li>
-            <li>Java</li>
-            <li>JavaScript (ES6+)</li>
-            <li>TypeScript</li>
-          </ul>
-          <ul data-skill-type="frontend">
-            <li>Tailwind</li>
-            <li>React</li>
-            <li>Next</li>
-          </ul>
-          <ul data-skill-type="backend">
-            <li>Django</li>
-            <li>Spring Boot</li>
-          </ul>
-          <ul data-skill-type="systems">
-            <li>Git</li>
-            <li>Docker</li>
-            <li>Linux</li>
-          </ul>
-          <ul data-skill-type="tools">
-            <li>Vim</li>
-            <li>VS Code</li>
-          </ul>
+        <div class="infos">
+          <p class="my-intro font-fira-mono font-light">Hello, my name is</p>
+          <h1 class="my-name font-inter">Zakaria Wina.</h1>
+          <h1 class="my-role font-inter">I am a Software Engineer</h1>
+          <p class="my-desc font-inter">
+            As a software engineer, I create efficient web apps for exceptional user experiences.
+          </p>
         </div>
-    </section>
-    <section id="projects">
-      <h1 class="title">Projects</h1>
-      <div>
-        <div class="project" data-project-url="https://github.com/zwzone/ft_transcendence">
-          <div class="icons">
-            <img src="assets/pong.svg" alt="pong">
-            <img src="assets/link-external.svg" alt="link" class="link-external">
-          </div>
-          <div class="description">
-            <h2 class="font-inter">ft_transcendence</h2>
-            <p class="font-inter">
-              This is my first web project. It's a web app that allows users to play a game of pong against each other.
-            </p>
-          </div>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Django</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div class="project" data-project-url="https://github.com/zwzone/MiniWebsites">
-          <div class="icons">
-            <img src="assets/internet.svg" alt="internet">
-            <img src="assets/link-external.svg" alt="link" class="link-external">
-          </div>
-          <div class="description">
-            <h2 class="font-inter">Mini React Apps</h2>
-            <p class="font-inter">
-              A Collection of mini React apps that I built while learning React.
-            </p>
-          </div>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Frontend</li>
-          </ul>
-        </div>
-        <div class="project" data-project-url="https://github.com/Peannut/webserv">
-          <div class="icons">
-            <img src="assets/server.svg" alt="server">
-            <img src="assets/link-external.svg" alt="link" class="link-external">
-          </div>
-          <div class="description">
-            <h2 class="font-inter">webserv</h2>
-            <p class="font-inter">
-              A simple web server that I built from scratch using C++.
-            </p>
-          </div>
-          <ul>
-            <li>C / C++</li>
-            <li>HTTP</li>
-          </ul>
-        </div>
-        <div class="project" data-project-url="https://github.com/zwzone/Inception">
-          <div class="icons">
-            <img src="assets/docker.svg" alt="docker">
-            <img src="assets/link-external.svg" alt="link" class="link-external">
-          </div>
-          <div class="description">
-            <h2 class="font-inter">inception</h2>
-            <p class="font-inter">
-              Working with Docker and containerization. I built a simple web server using Docker.
-            </p>
-          </div>
-          <ul>
-            <li>Docker</li>
-            <li>Containerization</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div>
-        <h2 class="title font-fira-mono">Good! What's Next?</h2>
-        <h1 class="font-inter">Get In Touch</h1>
+      </section>
+      <section id="about">
+        <h1 class="title font-inter">About Me</h1>
         <p class="font-inter">
-          I'm currently looking for new opportunities, my inbox is always open. Thank you for visiting my portfolio.
+          Hello everyone. I'm Zakaria, deeply fascinated by everything related to science and logic,
+          such as mathematics and physics. When I first delved into the world of computers and
+          programming, I realized that this is the path I must forge for my career.
         </p>
+        <p class="font-inter">
+          So, my first step was to learn the basics of programming, and I started with Compatitive
+          Programming. I learned algorithms and data structures, and I practiced a lot on platforms
+          like <a href="https://leetcode.com/u/zwzone/">LeetCode</a>. I also learned about web
+          development, and I started with HTML, CSS, and JavaScript. then I learned about React
+        </p>
+        <p class="font-inter">
+          One of my goals is to become a full-stack developer, and I'm working hard to achieve that
+          goal. I'm currently learning Java and Spring Boot to become a back-end developer. I'm also
+          learning about databases and SQL.
+        </p>
+        <p class="font-inter">
+          I'm always looking for opportunities to work on projects that are challenging and require
+          me to learn new things. I'm also looking for opportunities to work with people who are
+          passionate about what they do.
+        </p>
+        <p class="font-inter">Here are a few technologies I've been working with recently:</p>
+        <div class="skills">
+          <div class="skills-types">
+            <button data-skill-type="languages" class="active">Languages</button>
+            <button data-skill-type="frontend">Frontend</button>
+            <button data-skill-type="backend">Backend</button>
+            <button data-skill-type="systems">Systems</button>
+            <button data-skill-type="tools">Tools</button>
+          </div>
+          <div class="skills-list">
+            <ul class="active" data-skill-type="languages">
+              <li>C / C++</li>
+              <li>Java</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+            </ul>
+            <ul data-skill-type="frontend">
+              <li>Tailwind</li>
+              <li>React</li>
+              <li>Next</li>
+            </ul>
+            <ul data-skill-type="backend">
+              <li>Django</li>
+              <li>Spring Boot</li>
+            </ul>
+            <ul data-skill-type="systems">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>Linux</li>
+            </ul>
+            <ul data-skill-type="tools">
+              <li>Vim</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div>
+          <div class="project" data-project-url="https://github.com/zwzone/ft_transcendence">
+            <div class="icons">
+              <img src="assets/pong.svg" alt="pong" />
+              <img src="assets/link-external.svg" alt="link" class="link-external" />
+            </div>
+            <div class="description">
+              <h2 class="font-inter">ft_transcendence</h2>
+              <p class="font-inter">
+                This is my first web project. It's a web app that allows users to play a game of
+                pong against each other.
+              </p>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Django</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="project" data-project-url="https://github.com/zwzone/MiniWebsites">
+            <div class="icons">
+              <img src="assets/internet.svg" alt="internet" />
+              <img src="assets/link-external.svg" alt="link" class="link-external" />
+            </div>
+            <div class="description">
+              <h2 class="font-inter">Mini React Apps</h2>
+              <p class="font-inter">
+                A Collection of mini React apps that I built while learning React.
+              </p>
+            </div>
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Frontend</li>
+            </ul>
+          </div>
+          <div class="project" data-project-url="https://github.com/Peannut/webserv">
+            <div class="icons">
+              <img src="assets/server.svg" alt="server" />
+              <img src="assets/link-external.svg" alt="link" class="link-external" />
+            </div>
+            <div class="description">
+              <h2 class="font-inter">webserv</h2>
+              <p class="font-inter">A simple web server that I built from scratch using C++.</p>
+            </div>
+            <ul>
+              <li>C / C++</li>
+              <li>HTTP</li>
+            </ul>
+          </div>
+          <div class="project" data-project-url="https://github.com/zwzone/Inception">
+            <div class="icons">
+              <img src="assets/docker.svg" alt="docker" />
+              <img src="assets/link-external.svg" alt="link" class="link-external" />
+            </div>
+            <div class="description">
+              <h2 class="font-inter">inception</h2>
+              <p class="font-inter">
+                Working with Docker and containerization. I built a simple web server using Docker.
+              </p>
+            </div>
+            <ul>
+              <li>Docker</li>
+              <li>Containerization</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h2 class="title font-fira-mono">Good! What's Next?</h2>
+          <h1 class="font-inter">Get In Touch</h1>
+          <p class="font-inter">
+            I'm currently looking for new opportunities, my inbox is always open. Thank you for
+            visiting my portfolio.
+          </p>
+        </div>
+        <a class="font-fira-mono" href="mailto:contact@zwzone.me">
+          <div></div>
+          <span>Contact Me.</span>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <div class="socials">
+        <!-- GitHub -->
+        <a href="https://github.com/zwzone" target="_blank">
+          <img src="assets/github.svg" alt="github" />
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/zwzone/" target="_blank">
+          <img src="assets/linkedin.svg" alt="linkedin" />
+        </a>
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/zwzone/" target="_blank">
+          <img src="assets/leetcode.svg" alt="leetcode" />
+        </a>
+        <div></div>
       </div>
-      <a class="font-fira-mono" href="mailto:contact@zwzone.me">
-        <div></div><span>Contact Me.</span>
-      </a>
-    </section>
-  </main>
-  <footer>
-    <div class="socials">
-      <!-- GitHub -->
-      <a href="https://github.com/zwzone" target="_blank">
-        <img src="assets/github.svg" alt="github">
-      </a>
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/zwzone/" target="_blank">
-        <img src="assets/linkedin.svg" alt="linkedin">
-      </a>
-      <!-- LeetCode -->
-      <a href="https://leetcode.com/u/zwzone/" target="_blank">
-        <img src="assets/leetcode.svg" alt="leetcode">
-      </a>
-      <div></div>
-    </div>
-    <a class="font-fira-mono" href="https://github.com/zwzone/portfolio" target="_blank">Made with ❤️ by Zakaria Wina.</a>
-  </footer>
-</body>
-
+      <a class="font-fira-mono" href="https://github.com/zwzone/portfolio" target="_blank"
+        >Made with ❤️ by Zakaria Wina.</a
+      >
+    </footer>
+  </body>
 </html>
