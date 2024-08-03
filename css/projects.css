@@ -36,7 +36,8 @@
 
 #projects>div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(256px, 320px));
+  justify-content: center;
   gap: 1rem;
 }
 

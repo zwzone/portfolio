@@ -6,6 +6,21 @@ footer {
   gap: 2rem;
 }
 
+footer>.email {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+  gap: 1rem;
+}
+
+footer>.email>span {
+  writing-mode: vertical-rl;
+  letter-spacing: .25rem;
+  font-size: 1rem;
+  color: var(--color-secondary-23-tr2);
+}
+
 footer>.socials {
   display: flex;
   justify-content: space-around;
@@ -13,9 +28,10 @@ footer>.socials {
 }
 
 footer>.socials>a {
-  padding: .5rem;
+  padding: .5rem 1rem;
 }
 
+footer>.email>div,
 footer>.socials>div {
   display: none;
   margin-top: 1rem;
@@ -48,18 +64,28 @@ footer>a:hover {
 }
 
 @media (min-width: 1024px) {
+  footer>.email,
   footer>.socials {
+    display: flex;
     position: fixed;
     bottom: 0;
-    left: 0;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  footer>.email {
+    right: 0;
+  }
+
+  footer>.socials {
+    left: 0;
   }
 
   footer>.socials>a>img {
     width: 24px;
   }
 
+  footer>.email>div,
   footer>.socials>div {
     display: block;
   }
