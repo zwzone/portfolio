@@ -1,6 +1,7 @@
 /* CSS Files */
 @import "./typography.css";
 @import "./colors.css";
+@import "./showcase.css";
 @import "./header.css";
 @import "./humburger.css";
 @import "./home.css";
